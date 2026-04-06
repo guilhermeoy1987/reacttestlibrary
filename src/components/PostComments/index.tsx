@@ -1,6 +1,5 @@
 import { FormEvent, useState } from 'react';
 import styles from './PostComments.module.css';
-
 import Comment from '../../models/Comment';
 
 const Post = () => {
@@ -18,7 +17,8 @@ const Post = () => {
         <div>
             <ul className={styles['post-comments']}>
                 {comments.map(({ comment, id }) => (
-                    <li className={styles['post-comment']} key={id}>
+                    // Adicionado data-testid aqui para contar os itens no teste
+                    <li className={styles['post-comment']} key={id} data-testid="comentario-item">
                         <p className={styles['post-comment-content']}>
                             {comment}
                         </p>
@@ -26,8 +26,20 @@ const Post = () => {
                 ))}
             </ul>
             <form onSubmit={handleAddComment} className={styles['post-comments-form']}>
-                <textarea value={tempComment} onChange={e => setTempComment(e.target.value)} required className={styles['post-comments-form-textarea']} />
-                <button type="submit" className={styles['post-comments-form-button']}>
+                {/* Adicionado data-testid no textarea */}
+                <textarea 
+                    data-testid="campo-comentario"
+                    value={tempComment} 
+                    onChange={e => setTempComment(e.target.value)} 
+                    required 
+                    className={styles['post-comments-form-textarea']} 
+                />
+                {/* Adicionado data-testid no botão */}
+                <button 
+                    data-testid="btn-comentar"
+                    type="submit" 
+                    className={styles['post-comments-form-button']}
+                >
                     Comentar
                 </button>
             </form>
