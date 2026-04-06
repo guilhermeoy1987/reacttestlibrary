@@ -16,7 +16,7 @@ Neste repositório existe uma branch chamada **resolucao** com o exercício reso
 
 
 Sobre o Projeto
-O projeto consiste em  códigos prático de Testes de Unidade e Integração utilizando a React Testing Library (RTL) e Jest. O objetivo é validar as funcionalidades de um componente de comentários, garantindo que a interação do usuário e a renderização dos dados ocorram como esperado.
+O projeto consiste em  códigos prático de Testes de Unidade e Integração utilizando a React Testing Library (RTL) e Jest. Fiz a validar as funcionalidades de um componente de comentários, garantindo que a interação do usuário e a renderização dos dados ocorram como esperado.
 
 🛠️ O que foi implementado:
 Configuração de Seletores: Adição de atributos data-testid nos elementos de formulário (textarea e button) e nos itens da lista para facilitar a captura via RTL.
@@ -37,7 +37,7 @@ Jest (Test Runner)
 React Testing Library (Interação com o DOM)
 
 🧪 Como rodar os testes
-Certifique-se de que as dependências estão instaladas:
+Certifiquei  de que as dependências estão instaladas:
 
 Bash
 npm install
