@@ -27,7 +27,20 @@ Teste de Fluxo de Usuário: * Simulação da digitação de múltiplos comentár
 
 Simulação de disparos de eventos de clique no formulário.
 
-Validação da persistência e contagem dos comentários renderizados na tela.
+Ocorreu a validação da persistência e contagem dos comentários renderizados na tela.
+
+Este repositório contém a implementação de testes automatizados para um componente de comentários em React, utilizando **Jest** e **React Testing Library**.
+
+1. **Atributos de Teste:** Implementação de `data-testid` no componente para garantir seletores robustos e independentes da estilização CSS.
+2. **Teste de Integração:** Criação de um fluxo de teste que:
+   - Renderizei o componente de comentários.
+   - Simulei a digitação e o envio de **dois comentários** distintos.
+   - Verifiquei se ambos os comentários foram renderizados corretamente na lista após a ação do usuário.
+
+## 🛠️ Tecnologias:
+- React / TypeScript
+- Jest
+- React Testing Library (RTL)
 
 🚀 Tecnologias Utilizadas:
 React com TypeScript
